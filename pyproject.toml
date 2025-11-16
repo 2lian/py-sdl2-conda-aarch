@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PySDL2"
+version = "0.9.18a1"
+description = "Python SDL2 bindings"
+readme = "README.md"
+authors = [
+    { name = "Marcus von Appen", email = "marcus@sysfault.org" },
+]
+license = { text = "Zlib" }
+urls = {    "Homepage" = "https://github.com/py-sdl/py-sdl2", "Source" = "https://github.com/py-sdl/py-sdl2"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: Public Domain",
+    "License :: OSI Approved :: zlib/libpng License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.setuptools]
+packages = [
+    "sdl2",
+    "sdl2.ext",
+    "sdl2.test",
+    "sdl2.examples",
+]
+
+[tool.setuptools.package-dir]
+"sdl2.examples" = "examples"
+
+[tool.setuptools.package-data]
+"sdl2.test" = ["resources/*.*"]
+"sdl2.examples" = ["resources/*.*"]
