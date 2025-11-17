@@ -20,7 +20,7 @@ sdl2_ttf = ">=2.24.0,<3"
 
 [package]
 name = "pysdl2"
-version = "1.0.0"
+version = "0.0.1"
 
 [package.build.backend]
 channels = [
