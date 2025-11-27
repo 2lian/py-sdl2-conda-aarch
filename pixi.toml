@@ -1,14 +1,9 @@
 [workspace]
 name = "pysdl2"
 channels = [
-  "https://prefix.dev/robostack-jazzy",
   "https://prefix.dev/conda-forge",
-  "https://prefix.dev/motion-stack-dev",
 ]
-platforms = [
-  "linux-64",
-  "linux-aarch64",
-]
+platforms = ["win-64", "linux-64", "linux-aarch64", "osx-arm64", "osx-64"]
 preview = ["pixi-build"]
 
 [dependencies]
@@ -20,7 +15,7 @@ sdl2_ttf = ">=2.24.0,<3"
 
 [package]
 name = "pysdl2"
-version = "0.0.1"
+version = "0.9.17"
 
 [package.build.backend]
 channels = [
@@ -42,8 +37,8 @@ setuptools = "*"
 setuptools = "*"
 
 [package.run-dependencies]
-sdl2 = ">=2.32.56,<3"
-sdl2_gfx = ">=1.0.4,<2"
-sdl2_image = ">=2.8.2,<3"
-sdl2_mixer = ">=2.6.3,<3"
-sdl2_ttf = ">=2.24.0,<3"
+sdl2 = ">=2.0.0,<3"
+sdl2_gfx = ">=1.0.0,<2"
+sdl2_image = ">=2.0.0,<3"
+sdl2_mixer = ">=2.0.0,<3"
+sdl2_ttf = ">=2.0.0,<3"
